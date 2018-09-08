@@ -40,11 +40,11 @@ namespace HW5
             }
 
             Console.WriteLine("Find value by key:");
-            uint serchValue = Convert.ToUInt32(Console.ReadLine());
-
+            
             foreach (KeyValuePair<uint, string>keyValue in dic)
             {
-                if (dic.ContainsKey(keyValue.Key))
+                uint serchValue = Convert.ToUInt32(Console.ReadLine());
+                if (keyValue.Key == serchValue)
                 {
                     Console.WriteLine("Finde name = {0}", dic[serchValue] );
                 }
